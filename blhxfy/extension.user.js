@@ -11196,12 +11196,12 @@ ${extraHtml}
 	  return '';
 	};
 
-	const googleTrans = async (keyword, lang = 'en', to = 'zh-TW') => {
+	const googleTrans = async (keyword, lang = 'en', to = 'zh-CN') => {
 	  let query = new urlSearchParams_node({
 	    client: 'gtx',
 	    sl: lang,
-	    tl: to,
-	    hl: 'zh-TW',
+	    tl: 'zh-TW',
+	    hl: 'zh-CN',
 	    ie: 'UTF-8',
 	    oe: 'UTF-8'
 	  });
@@ -11662,7 +11662,7 @@ ${extraHtml}
 	      const transList = await transMulti(txtList, nameMap, nounMap, nounFixMap, caiyunPrefixMap);
 	      let transNotice = false;
 	      const transApiName = {
-	        google: ['Google翻译', 'https://translate.google.com.tw/?hl=zh-TW'],
+	        google: ['Google翻译', 'https://translate.google.cn'],
 	        caiyun: ['彩云小译', 'http://www.caiyunapp.com/fanyi/']
 	      };
 	      const apiData = transApiName[config.transApi];
