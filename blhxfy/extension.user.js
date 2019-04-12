@@ -11196,12 +11196,12 @@ ${extraHtml}
 	  return '';
 	};
 
-	const googleTrans = async (keyword, lang = 'en', to = 'zh-CN') => {
+	const googleTrans = async (keyword, lang = 'en', to = 'zh-TW') => {
 	  let query = new urlSearchParams_node({
 	    client: 'gtx',
 	    sl: lang,
 	    tl: to,
-	    hl: 'zh-CN',
+	    hl: 'zh-TW',
 	    ie: 'UTF-8',
 	    oe: 'UTF-8'
 	  });
