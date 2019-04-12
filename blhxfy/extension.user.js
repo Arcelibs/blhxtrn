@@ -11421,7 +11421,7 @@ ${extraHtml}
 	      }
 	    }
 
-	    const targetLang = config.lang !== 'hant' ? 'zh-CN' : 'zh-TW';
+	    const targetLang = config.lang !== 'hant' ? 'zh-TW' : 'zh-TW';
 	    return transApi(txt, lang, targetLang);
 	  }));
 	  return transStr.reduce((result, str) => {
@@ -11662,7 +11662,7 @@ ${extraHtml}
 	      const transList = await transMulti(txtList, nameMap, nounMap, nounFixMap, caiyunPrefixMap);
 	      let transNotice = false;
 	      const transApiName = {
-	        google: ['Google翻译', 'https://translate.google.cn'],
+	        google: ['Google翻译', 'https://translate.google.com.tw/?hl=zh-TW'],
 	        caiyun: ['彩云小译', 'http://www.caiyunapp.com/fanyi/']
 	      };
 	      const apiData = transApiName[config.transApi];
